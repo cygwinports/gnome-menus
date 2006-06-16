@@ -1,0 +1,9 @@
+category: Gnome Python
+requires: cygwin libgnome-menu2 python
+external-source: gnome-menus
+sdesc: "Python bindings for GNOME Desktop Menu library, and gmenu-simple-editor"
+ldesc: "The package contains an implementation of the draft 'Desktop
+Menu Specification' from freedesktop.org.
+
+Also contained here are the GNOME menu layout configuration
+files, .directory files and assorted menu related utility programs."

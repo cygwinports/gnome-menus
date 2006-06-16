@@ -1,0 +1,8 @@
+category: Gnome
+requires: cygwin libgnome-menu2
+sdesc: "GNOME Desktop Menu implementation (data and utilities)"
+ldesc: "The package contains an implementation of the draft 'Desktop
+Menu Specification' from freedesktop.org.
+
+Also contained here are the GNOME menu layout configuration
+files, .directory files and assorted menu related utility programs."
