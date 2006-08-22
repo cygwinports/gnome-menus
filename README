@@ -7,24 +7,24 @@ Also contained here are the GNOME menu layout configuration
 files, .directory files and assorted menu related utility programs.
 
 Runtime requirements:
-  cygwin-1.5.19-4
+  cygwin-1.5.21-1
   gamin-0.1.7-1
-  glib2-2.8.6-1
-  python-2.4.1-1	(for pygmenu and gmenu-simple-editor)
+  glib2-2.10.3-1
+  python-2.4.3-1	(for pygmenu and gmenu-simple-editor)
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.19-4
-  autoconf2.5-2.59-3
+  cygwin-1.5.21-1
+  autoconf2.5-2.59-2
   automake1.9-1.9.6-1
-  binutils-20050610-1
-  cygport-0.1.91-1
+  binutils-20060709-1
+  cygport-0.2.5-1
   gawk-3.1.5-2
   gcc-core-3.4.4-1
-  libtool1.5-1.5.20-2
-  make-3.80-1
+  libtool1.5-1.5.22-1
+  make-3.81-1
   pkg-config-0.20-1
-  sed-4.1.4-1
+  sed-4.1.5-1
 
 Canonical website:
   http://www.gnome.org/
@@ -35,17 +35,17 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gnome-menus-2.14.0-X-src.tar.bz2
+  unpack gnome-menus-2.14.3-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gnome-menus-2.14.0-X.cygport all
+  cygport ./gnome-menus-2.14.3-X.cygport all
 
 This will create:
-  /usr/src/gnome-menus-2.14.0-X-src.tar.bz2
-  /usr/src/gnome-menus-2.14.0-X.tar.bz2
-  /usr/src/libgnome-menu2-2.14.0-X.tar.bz2
-  /usr/src/pygmenu-2.14.0-X.tar.bz2
+  /usr/src/gnome-menus-2.14.3-X-src.tar.bz2
+  /usr/src/gnome-menus-2.14.3-X.tar.bz2
+  /usr/src/libgnome-menu2-2.14.3-X.tar.bz2
+  /usr/src/pygmenu-2.14.3-X.tar.bz2
 
 -------------------------------------------
 
@@ -76,15 +76,15 @@ Files included in the binary package:
   /usr/share/desktop-directories/Settings.directory
   /usr/share/desktop-directories/System-Settings.directory
   /usr/share/desktop-directories/System-Tools.directory
-  /usr/share/doc/Cygwin/gnome-menus-2.14.0.README
-  /usr/share/doc/gnome-menus-2.14.0/AUTHORS
-  /usr/share/doc/gnome-menus-2.14.0/COPYING
-  /usr/share/doc/gnome-menus-2.14.0/COPYING.LIB
-  /usr/share/doc/gnome-menus-2.14.0/ChangeLog
-  /usr/share/doc/gnome-menus-2.14.0/HACKING
-  /usr/share/doc/gnome-menus-2.14.0/INSTALL
-  /usr/share/doc/gnome-menus-2.14.0/NEWS
-  /usr/share/doc/gnome-menus-2.14.0/README
+  /usr/share/doc/Cygwin/gnome-menus-2.14.3.README
+  /usr/share/doc/gnome-menus-2.14.3/AUTHORS
+  /usr/share/doc/gnome-menus-2.14.3/COPYING
+  /usr/share/doc/gnome-menus-2.14.3/COPYING.LIB
+  /usr/share/doc/gnome-menus-2.14.3/ChangeLog
+  /usr/share/doc/gnome-menus-2.14.3/HACKING
+  /usr/share/doc/gnome-menus-2.14.3/INSTALL
+  /usr/share/doc/gnome-menus-2.14.3/NEWS
+  /usr/share/doc/gnome-menus-2.14.3/README
   /usr/share/locale/ar/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/bg/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/bn/LC_MESSAGES/gnome-menus.mo
@@ -184,6 +184,9 @@ Files included in the pygmenu package:
 ------------------
 
 Port Notes:
+
+----- version 2.14.3-1 -----
+Version bump.
 
 ----- version 2.14.0-1 -----
 Version bump for GNOME 2.14.
