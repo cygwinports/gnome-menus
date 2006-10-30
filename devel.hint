@@ -1,7 +1,7 @@
-category: Gnome Python
-requires: cygwin gnome-menus python
+category: Gnome
+requires: cygwin gamin-devel glib2-devel
 external-source: gnome-menus
-sdesc: "Python bindings for GNOME Desktop Menu library, and gmenu-simple-editor"
+sdesc: "GNOME Desktop Menu implementation (development)"
 ldesc: "The package contains an implementation of the draft 'Desktop
 Menu Specification' from freedesktop.org.
 
