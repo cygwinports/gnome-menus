@@ -9,8 +9,8 @@ files, .directory files and assorted menu related utility programs.
 Runtime requirements:
   cygwin-1.5.24-2
   gamin-0.1.7-1
-  glib2-2.12.12-1
-  python-2.5.1-1	(for pygmenu and gmenu-simple-editor)
+  glib2-2.12.12-2
+  python-2.5.1-3	(for pygmenu and gmenu-simple-editor)
 
 Build requirements:
 (besides corresponding -devel packages)
@@ -35,17 +35,17 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gnome-menus-2.18.0-X-src.tar.bz2
+  unpack gnome-menus-2.18.3-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gnome-menus-2.18.0-X.cygport all
+  cygport ./gnome-menus-2.18.3-X.cygport all
 
 This will create:
-  /usr/src/gnome-menus-2.18.0-X-src.tar.bz2
-  /usr/src/gnome-menus-2.18.0-X.tar.bz2
-  /usr/src/gnome-menus-devel-2.18.0-X.tar.bz2
-  /usr/src/python-gmenu-2.18.0-X.tar.bz2
+  /usr/src/gnome-menus-2.18.3-X-src.tar.bz2
+  /usr/src/gnome-menus-2.18.3-X.tar.bz2
+  /usr/src/gnome-menus-devel-2.18.3-X.tar.bz2
+  /usr/src/python-gmenu-2.18.3-X.tar.bz2
 
 -------------------------------------------
 
@@ -79,15 +79,15 @@ Files included in the binary packages:
   /usr/share/desktop-directories/System-Settings.directory
   /usr/share/desktop-directories/System-Tools.directory
   /usr/share/desktop-directories/System.directory
-  /usr/share/doc/Cygwin/gnome-menus-2.18.0.README
-  /usr/share/doc/gnome-menus-2.18.0/AUTHORS
-  /usr/share/doc/gnome-menus-2.18.0/COPYING
-  /usr/share/doc/gnome-menus-2.18.0/COPYING.LIB
-  /usr/share/doc/gnome-menus-2.18.0/ChangeLog
-  /usr/share/doc/gnome-menus-2.18.0/HACKING
-  /usr/share/doc/gnome-menus-2.18.0/INSTALL
-  /usr/share/doc/gnome-menus-2.18.0/NEWS
-  /usr/share/doc/gnome-menus-2.18.0/README
+  /usr/share/doc/Cygwin/gnome-menus-2.18.3.README
+  /usr/share/doc/gnome-menus-2.18.3/AUTHORS
+  /usr/share/doc/gnome-menus-2.18.3/COPYING
+  /usr/share/doc/gnome-menus-2.18.3/COPYING.LIB
+  /usr/share/doc/gnome-menus-2.18.3/ChangeLog
+  /usr/share/doc/gnome-menus-2.18.3/HACKING
+  /usr/share/doc/gnome-menus-2.18.3/INSTALL
+  /usr/share/doc/gnome-menus-2.18.3/NEWS
+  /usr/share/doc/gnome-menus-2.18.3/README
   /usr/share/locale/ar/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/be/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/be@latin/LC_MESSAGES/gnome-menus.mo
@@ -197,6 +197,12 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 2.18.3-1 -----
+Version bump.
+
+----- version 2.18.2-1 -----
+Version bump.
 
 ----- version 2.18.0-1 -----
 Version bump for GNOME 2.18, built for python-2.5.
