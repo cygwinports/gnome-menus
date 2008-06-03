@@ -1,0 +1,11 @@
+inherit gnome2
+
+DESCRIPTION="GNOME Desktop Menu implementation"
+
+PKG_NAMES="${PN} ${PN}-devel python-gmenu"
+PKG_HINTS="setup devel python"
+PKG_CONTENTS[0]="--exclude=gmenu-simple-editor etc/ usr/bin/ 
+	usr/share/desktop-directories/ usr/share/doc/ usr/share/locale/"
+PKG_CONTENTS[1]='usr/include/ usr/lib/lib* usr/lib/pkgconfig/'
+PKG_CONTENTS[2]="usr/bin/gmenu-simple-editor usr/lib/python*
+	usr/share/applications/ usr/share/gnome-menus/"

@@ -1,5 +1,5 @@
 category: Gnome
-requires: cygwin gamin-devel glib2-devel
+requires: cygwin gnome-menus gamin-devel glib2-devel
 external-source: gnome-menus
 sdesc: "GNOME Desktop Menu implementation (development)"
 ldesc: "The package contains an implementation of the draft 'Desktop

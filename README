@@ -7,22 +7,26 @@ Also contained here are the GNOME menu layout configuration
 files, .directory files and assorted menu related utility programs.
 
 Runtime requirements:
-  cygwin-1.5.24-2
+  cygwin-1.5.25-11
   gamin-0.1.9-1
-  glib2-2.14.4-1
+  glib2-2.16.3-1
   libintl8-0.15-1
-  python-2.5.1-3	(for pygmenu and gmenu-simple-editor)
+(for pygmenu and gmenu-simple-editor)
+  python-2.5.2-1
+  python-gobject2-2.14.2-1
+  python-gtk2-2.12.1-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.24-2
   autoconf2.5-2.61-1
-  automake1.10-1.10-1
-  binutils-20060817-1
-  cygport-0.3.7-1
-  gawk-3.1.5-4
+  automake1.10-1.10.1-1
+  binutils-20080523-1
+  cygport-0.3.11-1
+  gawk-3.1.6-1
   gcc-core-3.4.4-3
-  libtool1.5-1.5.23a-2
+  gnome-common-2.20.0-2
+  intltool-0.37.1-1
+  libtool-2.2.2-2
   make-3.81-1
   pkg-config-0.21-1
   sed-4.1.5-2
@@ -36,17 +40,17 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gnome-menus-2.20.2-X-src.tar.bz2
+  unpack gnome-menus-2.22.2-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gnome-menus-2.20.2-X.cygport all
+  cygport ./gnome-menus-2.22.2-X.cygport all
 
 This will create:
-  /usr/src/gnome-menus-2.20.2-X-src.tar.bz2
-  /usr/src/gnome-menus-2.20.2-X.tar.bz2
-  /usr/src/gnome-menus-devel-2.20.2-X.tar.bz2
-  /usr/src/python-gmenu-2.20.2-X.tar.bz2
+  /usr/src/gnome-menus-2.22.2-X-src.tar.bz2
+  /usr/src/gnome-menus-2.22.2-X.tar.bz2
+  /usr/src/gnome-menus-devel-2.22.2-X.tar.bz2
+  /usr/src/python-gmenu-2.22.2-X.tar.bz2
 
 -------------------------------------------
 
@@ -80,15 +84,15 @@ Files included in the binary packages:
   /usr/share/desktop-directories/System-Settings.directory
   /usr/share/desktop-directories/System-Tools.directory
   /usr/share/desktop-directories/System.directory
-  /usr/share/doc/Cygwin/gnome-menus-2.20.2.README
-  /usr/share/doc/gnome-menus-2.20.2/AUTHORS
-  /usr/share/doc/gnome-menus-2.20.2/COPYING
-  /usr/share/doc/gnome-menus-2.20.2/COPYING.LIB
-  /usr/share/doc/gnome-menus-2.20.2/ChangeLog
-  /usr/share/doc/gnome-menus-2.20.2/HACKING
-  /usr/share/doc/gnome-menus-2.20.2/INSTALL
-  /usr/share/doc/gnome-menus-2.20.2/NEWS
-  /usr/share/doc/gnome-menus-2.20.2/README
+  /usr/share/doc/gnome-menus-2.22.2/AUTHORS
+  /usr/share/doc/gnome-menus-2.22.2/COPYING
+  /usr/share/doc/gnome-menus-2.22.2/COPYING.LIB
+  /usr/share/doc/gnome-menus-2.22.2/ChangeLog
+  /usr/share/doc/gnome-menus-2.22.2/HACKING
+  /usr/share/doc/gnome-menus-2.22.2/INSTALL
+  /usr/share/doc/gnome-menus-2.22.2/NEWS
+  /usr/share/doc/gnome-menus-2.22.2/README
+  /usr/share/locale/af/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/ar/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/as/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/be/LC_MESSAGES/gnome-menus.mo
@@ -113,6 +117,7 @@ Files included in the binary packages:
   /usr/share/locale/fa/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/fi/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/fr/LC_MESSAGES/gnome-menus.mo
+  /usr/share/locale/fur/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/ga/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/gl/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/gn/LC_MESSAGES/gnome-menus.mo
@@ -122,6 +127,7 @@ Files included in the binary packages:
   /usr/share/locale/hu/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/hy/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/id/LC_MESSAGES/gnome-menus.mo
+  /usr/share/locale/io/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/it/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/ja/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/ka/LC_MESSAGES/gnome-menus.mo
@@ -131,6 +137,7 @@ Files included in the binary packages:
   /usr/share/locale/ky/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/lt/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/lv/LC_MESSAGES/gnome-menus.mo
+  /usr/share/locale/mai/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/mg/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/mk/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/ml/LC_MESSAGES/gnome-menus.mo
@@ -204,6 +211,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 2.22.2-1 -----
+Version bump for GNOME 2.22.
 
 ----- version 2.20.2-1 -----
 Version bump for GNOME 2.20.
