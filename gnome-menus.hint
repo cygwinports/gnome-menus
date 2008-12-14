@@ -1,7 +1,6 @@
-category: Gnome Python
-requires: cygwin gnome-menus python python-gobject2 python-gtk2
-external-source: gnome-menus
-sdesc: "Python bindings for GNOME Desktop Menu library, and gmenu-simple-editor"
+category: Gnome
+requires: python python-gmenu python-gobject2 python-gtk2
+sdesc: "GNOME Desktop Menu implementation (apps and data)"
 ldesc: "The package contains an implementation of the draft 'Desktop
 Menu Specification' from freedesktop.org.
 

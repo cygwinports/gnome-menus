@@ -7,28 +7,27 @@ Also contained here are the GNOME menu layout configuration
 files, .directory files and assorted menu related utility programs.
 
 Runtime requirements:
-  cygwin-1.5.25-11
-  gamin-0.1.9-1
-  glib2-2.16.3-1
-  libintl8-0.15-1
+  cygwin-1.5.25-15
+  libglib2.0_0-2.18.3-1
+  libintl8-0.17-2
 (for pygmenu and gmenu-simple-editor)
-  python-2.5.2-1
-  python-gobject2-2.14.2-1
-  python-gtk2-2.12.1-1
+  python-2.5.2-4
+  python-gobject2-2.15.4-1
+  python-gtk2-2.13.0-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.61-1
-  automake1.10-1.10.1-1
-  binutils-20080523-1
-  cygport-0.3.11-1
+  autoconf2.5-2.63-1
+  automake1.10-1.10.1-2
+  binutils-20080624-2
+  cygport-0.4.3-1
   gawk-3.1.6-1
   gcc-core-3.4.4-3
-  gnome-common-2.20.0-2
-  intltool-0.37.1-1
-  libtool-2.2.2-2
+  gnome-common-2.24.0-1
+  intltool-0.40.5-1
+  libtool-2.2.6a-1
   make-3.81-1
-  pkg-config-0.21-1
+  pkg-config-0.23a-2
   sed-4.1.5-2
 
 Canonical website:
@@ -40,17 +39,18 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gnome-menus-2.22.2-X-src.tar.bz2
+  unpack gnome-menus-2.24.2-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gnome-menus-2.22.2-X.cygport all
+  cygport ./gnome-menus-2.24.2-X.cygport all
 
 This will create:
-  /usr/src/gnome-menus-2.22.2-X-src.tar.bz2
-  /usr/src/gnome-menus-2.22.2-X.tar.bz2
-  /usr/src/gnome-menus-devel-2.22.2-X.tar.bz2
-  /usr/src/python-gmenu-2.22.2-X.tar.bz2
+  /usr/src/gnome-menus-2.24.2-X-src.tar.bz2
+  /usr/src/gnome-menus-2.24.2-X.tar.bz2
+  /usr/src/libgnome-menu-devel-2.24.2-X.tar.bz2
+  /usr/src/libgnome-menu2-2.24.2-X.tar.bz2
+  /usr/src/python-gmenu-2.24.2-X.tar.bz2
 
 -------------------------------------------
 
@@ -58,43 +58,60 @@ Files included in the binary packages:
 
 (gnome-menus)
   /etc/xdg/menus/applications.menu
-  /etc/xdg/menus/preferences.menu
   /etc/xdg/menus/settings.menu
-  /usr/bin/cyggnome-menu-2.dll
-  /usr/bin/gnome-menu-spec-test.exe
-  /usr/share/desktop-directories/Accessibility.directory
-  /usr/share/desktop-directories/Accessories.directory
-  /usr/share/desktop-directories/Applications.directory
-  /usr/share/desktop-directories/Desktop.directory
+  /usr/bin/gmenu-simple-editor
+  /usr/lib/python2.5/site-packages/GMenuSimpleEditor/__init__.py
+  /usr/lib/python2.5/site-packages/GMenuSimpleEditor/__init__.pyc
+  /usr/lib/python2.5/site-packages/GMenuSimpleEditor/__init__.pyo
+  /usr/lib/python2.5/site-packages/GMenuSimpleEditor/config.py
+  /usr/lib/python2.5/site-packages/GMenuSimpleEditor/config.pyc
+  /usr/lib/python2.5/site-packages/GMenuSimpleEditor/config.pyo
+  /usr/lib/python2.5/site-packages/GMenuSimpleEditor/main.py
+  /usr/lib/python2.5/site-packages/GMenuSimpleEditor/main.pyc
+  /usr/lib/python2.5/site-packages/GMenuSimpleEditor/main.pyo
+  /usr/lib/python2.5/site-packages/GMenuSimpleEditor/maindialog.py
+  /usr/lib/python2.5/site-packages/GMenuSimpleEditor/maindialog.pyc
+  /usr/lib/python2.5/site-packages/GMenuSimpleEditor/maindialog.pyo
+  /usr/lib/python2.5/site-packages/GMenuSimpleEditor/menufilewriter.py
+  /usr/lib/python2.5/site-packages/GMenuSimpleEditor/menufilewriter.pyc
+  /usr/lib/python2.5/site-packages/GMenuSimpleEditor/menufilewriter.pyo
+  /usr/lib/python2.5/site-packages/GMenuSimpleEditor/menutreemodel.py
+  /usr/lib/python2.5/site-packages/GMenuSimpleEditor/menutreemodel.pyc
+  /usr/lib/python2.5/site-packages/GMenuSimpleEditor/menutreemodel.pyo
+  /usr/share/applications/gmenu-simple-editor.desktop
+  /usr/share/desktop-directories/AudioVideo.directory
   /usr/share/desktop-directories/Development.directory
   /usr/share/desktop-directories/Education.directory
-  /usr/share/desktop-directories/Games.directory
+  /usr/share/desktop-directories/Game.directory
   /usr/share/desktop-directories/Graphics.directory
   /usr/share/desktop-directories/Hardware.directory
-  /usr/share/desktop-directories/Internet.directory
   /usr/share/desktop-directories/InternetAndNetwork.directory
   /usr/share/desktop-directories/LookAndFeel.directory
-  /usr/share/desktop-directories/Multimedia.directory
+  /usr/share/desktop-directories/Network.directory
   /usr/share/desktop-directories/Office.directory
-  /usr/share/desktop-directories/Other.directory
   /usr/share/desktop-directories/Personal.directory
-  /usr/share/desktop-directories/Preferences.directory
-  /usr/share/desktop-directories/Settings-Accessibility.directory
+  /usr/share/desktop-directories/Settings-System.directory
   /usr/share/desktop-directories/Settings.directory
-  /usr/share/desktop-directories/System-Settings.directory
   /usr/share/desktop-directories/System-Tools.directory
   /usr/share/desktop-directories/System.directory
-  /usr/share/doc/gnome-menus-2.22.2/AUTHORS
-  /usr/share/doc/gnome-menus-2.22.2/COPYING
-  /usr/share/doc/gnome-menus-2.22.2/COPYING.LIB
-  /usr/share/doc/gnome-menus-2.22.2/ChangeLog
-  /usr/share/doc/gnome-menus-2.22.2/HACKING
-  /usr/share/doc/gnome-menus-2.22.2/INSTALL
-  /usr/share/doc/gnome-menus-2.22.2/NEWS
-  /usr/share/doc/gnome-menus-2.22.2/README
+  /usr/share/desktop-directories/Utility-Accessibility.directory
+  /usr/share/desktop-directories/Utility.directory
+  /usr/share/desktop-directories/X-GNOME-Menu-Applications.directory
+  /usr/share/desktop-directories/X-GNOME-Menu-System.directory
+  /usr/share/desktop-directories/X-GNOME-Other.directory
+  /usr/share/doc/gnome-menus-2.24.2/AUTHORS
+  /usr/share/doc/gnome-menus-2.24.2/COPYING
+  /usr/share/doc/gnome-menus-2.24.2/COPYING.LIB
+  /usr/share/doc/gnome-menus-2.24.2/ChangeLog
+  /usr/share/doc/gnome-menus-2.24.2/HACKING
+  /usr/share/doc/gnome-menus-2.24.2/INSTALL
+  /usr/share/doc/gnome-menus-2.24.2/NEWS
+  /usr/share/doc/gnome-menus-2.24.2/README
+  /usr/share/gnome-menus/glade/gmenu-simple-editor.glade
   /usr/share/locale/af/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/ar/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/as/LC_MESSAGES/gnome-menus.mo
+  /usr/share/locale/ast/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/be/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/be@latin/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/bg/LC_MESSAGES/gnome-menus.mo
@@ -124,13 +141,16 @@ Files included in the binary packages:
   /usr/share/locale/gu/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/he/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/hi/LC_MESSAGES/gnome-menus.mo
+  /usr/share/locale/hr/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/hu/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/hy/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/id/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/io/LC_MESSAGES/gnome-menus.mo
+  /usr/share/locale/is/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/it/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/ja/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/ka/LC_MESSAGES/gnome-menus.mo
+  /usr/share/locale/kk/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/kn/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/ko/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/ku/LC_MESSAGES/gnome-menus.mo
@@ -152,6 +172,7 @@ Files included in the binary packages:
   /usr/share/locale/or/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/pa/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/pl/LC_MESSAGES/gnome-menus.mo
+  /usr/share/locale/ps/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/pt/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/pt_BR/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/ro/LC_MESSAGES/gnome-menus.mo
@@ -162,7 +183,7 @@ Files included in the binary packages:
   /usr/share/locale/sl/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/sq/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/sr/LC_MESSAGES/gnome-menus.mo
-  /usr/share/locale/sr@Latn/LC_MESSAGES/gnome-menus.mo
+  /usr/share/locale/sr@latin/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/sv/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/ta/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/te/LC_MESSAGES/gnome-menus.mo
@@ -177,40 +198,25 @@ Files included in the binary packages:
   /usr/share/locale/zh_HK/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/zh_TW/LC_MESSAGES/gnome-menus.mo
 
-(gnome-menus-devel)
+(libgnome-menu2)
+  /usr/bin/cyggnome-menu-2.dll
+
+(libgnome-menu-devel)
   /usr/include/gnome-menus/gmenu-tree.h
   /usr/lib/libgnome-menu.dll.a
   /usr/lib/libgnome-menu.la
   /usr/lib/pkgconfig/libgnome-menu.pc
 
 (python-gmenu)
-  /usr/bin/gmenu-simple-editor
-  /usr/lib/python2.5/site-packages/GMenuSimpleEditor/__init__.py
-  /usr/lib/python2.5/site-packages/GMenuSimpleEditor/__init__.pyc
-  /usr/lib/python2.5/site-packages/GMenuSimpleEditor/__init__.pyo
-  /usr/lib/python2.5/site-packages/GMenuSimpleEditor/config.py
-  /usr/lib/python2.5/site-packages/GMenuSimpleEditor/config.pyc
-  /usr/lib/python2.5/site-packages/GMenuSimpleEditor/config.pyo
-  /usr/lib/python2.5/site-packages/GMenuSimpleEditor/main.py
-  /usr/lib/python2.5/site-packages/GMenuSimpleEditor/main.pyc
-  /usr/lib/python2.5/site-packages/GMenuSimpleEditor/main.pyo
-  /usr/lib/python2.5/site-packages/GMenuSimpleEditor/maindialog.py
-  /usr/lib/python2.5/site-packages/GMenuSimpleEditor/maindialog.pyc
-  /usr/lib/python2.5/site-packages/GMenuSimpleEditor/maindialog.pyo
-  /usr/lib/python2.5/site-packages/GMenuSimpleEditor/menufilewriter.py
-  /usr/lib/python2.5/site-packages/GMenuSimpleEditor/menufilewriter.pyc
-  /usr/lib/python2.5/site-packages/GMenuSimpleEditor/menufilewriter.pyo
-  /usr/lib/python2.5/site-packages/GMenuSimpleEditor/menutreemodel.py
-  /usr/lib/python2.5/site-packages/GMenuSimpleEditor/menutreemodel.pyc
-  /usr/lib/python2.5/site-packages/GMenuSimpleEditor/menutreemodel.pyo
   /usr/lib/python2.5/site-packages/gmenu.dll
   /usr/lib/python2.5/site-packages/gmenu.la
-  /usr/share/applications/gmenu-simple-editor.desktop
-  /usr/share/gnome-menus/glade/gmenu-simple-editor.glade
 
 ------------------
 
 Port Notes:
+
+----- version 2.24.2-1 -----
+Version bump for GNOME 2.24.
 
 ----- version 2.22.2-1 -----
 Version bump for GNOME 2.22.

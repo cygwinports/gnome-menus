@@ -1,0 +1,15 @@
+inherit python gnome2
+
+DESCRIPTION="GNOME Desktop Menu implementation"
+
+PATCH_URI="
+	2.22-maxsymlinks.patch
+	2.22-python-no-undefined.patch
+"
+
+PKG_NAMES="${PN} libgnome-menu2 libgnome-menu-devel python-gmenu"
+gnome_menus_CONTENTS="etc/ usr/bin/gmenu-simple-editor
+                      ${PYTHON_SITELIB#/}/GMenuSimpleEditor/ usr/share/"
+libgnome_menu2_CONTENTS="usr/bin/*-2.dll"
+libgnome_menu_devel_CONTENTS='usr/include/ usr/lib/lib* usr/lib/pkgconfig/'
+python_gmenu_CONTENTS="${PYTHON_SITELIB#/}/gmenu.*"
