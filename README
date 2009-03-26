@@ -7,26 +7,27 @@ Also contained here are the GNOME menu layout configuration
 files, .directory files and assorted menu related utility programs.
 
 Runtime requirements:
-  cygwin-1.5.25-15
-  libglib2.0_0-2.18.3-1
-  libintl8-0.17-2
+  cygwin-1.7.0-44
+  libgcc1-4.3.2-2
+  libglib2.0_0-2.20.0-1
+  libintl8-0.17-10
 (for pygmenu and gmenu-simple-editor)
-  python-2.5.2-4
-  python-gobject2-2.15.4-1
-  python-gtk2-2.13.0-1
+  python-2.5.4-10
+  python-gobject2-2.16.1-10
+  python-gtk2-2.14.1-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.63-1
-  automake1.10-1.10.1-2
+  autoconf2.5-2.63-10
+  automake1.10-1.10.1-10
   binutils-20080624-2
-  cygport-0.4.3-1
-  gawk-3.1.6-1
-  gcc-core-3.4.4-3
-  gnome-common-2.24.0-1
-  intltool-0.40.5-1
-  libtool-2.2.6a-1
-  make-3.81-1
+  cygport-0.9.6-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  gnome-common-2.26.0-1
+  intltool-0.40.6-1
+  libtool-2.2.6a-2
+  make-3.81-2
   pkg-config-0.23a-2
   sed-4.1.5-2
 
@@ -39,18 +40,18 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gnome-menus-2.24.2-X-src.tar.bz2
+  unpack gnome-menus-2.26.0-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gnome-menus-2.24.2-X.cygport all
+  cygport ./gnome-menus-2.26.0-X.cygport all
 
 This will create:
-  /usr/src/gnome-menus-2.24.2-X-src.tar.bz2
-  /usr/src/gnome-menus-2.24.2-X.tar.bz2
-  /usr/src/libgnome-menu-devel-2.24.2-X.tar.bz2
-  /usr/src/libgnome-menu2-2.24.2-X.tar.bz2
-  /usr/src/python-gmenu-2.24.2-X.tar.bz2
+  /usr/src/gnome-menus-2.26.0-X-src.tar.bz2
+  /usr/src/gnome-menus-2.26.0-X.tar.bz2
+  /usr/src/libgnome-menu-devel-2.26.0-X.tar.bz2
+  /usr/src/libgnome-menu2-2.26.0-X.tar.bz2
+  /usr/src/python-gmenu-2.26.0-X.tar.bz2
 
 -------------------------------------------
 
@@ -99,14 +100,14 @@ Files included in the binary packages:
   /usr/share/desktop-directories/X-GNOME-Menu-Applications.directory
   /usr/share/desktop-directories/X-GNOME-Menu-System.directory
   /usr/share/desktop-directories/X-GNOME-Other.directory
-  /usr/share/doc/gnome-menus-2.24.2/AUTHORS
-  /usr/share/doc/gnome-menus-2.24.2/COPYING
-  /usr/share/doc/gnome-menus-2.24.2/COPYING.LIB
-  /usr/share/doc/gnome-menus-2.24.2/ChangeLog
-  /usr/share/doc/gnome-menus-2.24.2/HACKING
-  /usr/share/doc/gnome-menus-2.24.2/INSTALL
-  /usr/share/doc/gnome-menus-2.24.2/NEWS
-  /usr/share/doc/gnome-menus-2.24.2/README
+  /usr/share/doc/gnome-menus/AUTHORS
+  /usr/share/doc/gnome-menus/COPYING
+  /usr/share/doc/gnome-menus/COPYING.LIB
+  /usr/share/doc/gnome-menus/ChangeLog
+  /usr/share/doc/gnome-menus/HACKING
+  /usr/share/doc/gnome-menus/NEWS
+  /usr/share/doc/gnome-menus/README
+  /usr/share/gnome-menus/examples/gnome-menus-ls.py
   /usr/share/gnome-menus/glade/gmenu-simple-editor.glade
   /usr/share/locale/af/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/ar/LC_MESSAGES/gnome-menus.mo
@@ -119,6 +120,7 @@ Files included in the binary packages:
   /usr/share/locale/bn_IN/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/br/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/ca/LC_MESSAGES/gnome-menus.mo
+  /usr/share/locale/crh/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/cs/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/cy/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/da/LC_MESSAGES/gnome-menus.mo
@@ -139,12 +141,14 @@ Files included in the binary packages:
   /usr/share/locale/gl/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/gn/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/gu/LC_MESSAGES/gnome-menus.mo
+  /usr/share/locale/ha/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/he/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/hi/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/hr/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/hu/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/hy/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/id/LC_MESSAGES/gnome-menus.mo
+  /usr/share/locale/ig/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/io/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/is/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/it/LC_MESSAGES/gnome-menus.mo
@@ -194,6 +198,7 @@ Files included in the binary packages:
   /usr/share/locale/uz@cyrillic/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/vi/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/xh/LC_MESSAGES/gnome-menus.mo
+  /usr/share/locale/yo/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/zh_CN/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/zh_HK/LC_MESSAGES/gnome-menus.mo
   /usr/share/locale/zh_TW/LC_MESSAGES/gnome-menus.mo
@@ -215,43 +220,8 @@ Files included in the binary packages:
 
 Port Notes:
 
------ version 2.24.2-1 -----
-Version bump for GNOME 2.24.
-
------ version 2.22.2-1 -----
-Version bump for GNOME 2.22.
-
------ version 2.20.2-1 -----
-Version bump for GNOME 2.20.
-
------ version 2.18.3-1 -----
-Version bump.
-
------ version 2.18.2-1 -----
-Version bump.
-
------ version 2.18.0-1 -----
-Version bump for GNOME 2.18, built for python-2.5.
-
------ version 2.16.1-1 -----
-Version bump for GNOME 2.16.
-Created separate devel package.
-
------ version 2.14.3-1 -----
-Version bump.
-
------ version 2.14.0-1 -----
-Version bump for GNOME 2.14.
-
------ version 2.12.0-2 -----
-Broke out shared library to support API instability.
-
------ version 2.12.0-1 -----
-Version and API bump for GNOME 2.12.
-Broke out python bindings and gmenu-simple-editor into the pygmenu package.
-
------ version 2.10.2-1 -----
-Initial release for Cygwin.
+----- version 2.26.0-1 -----
+Initial release of GNOME 2.26 for Cygwin 1.7.
 
 
 Cygwin port maintained by:
