@@ -7,9 +7,9 @@ Also contained here are the GNOME menu layout configuration
 files, .directory files and assorted menu related utility programs.
 
 Runtime requirements:
-  cygwin-1.7.0-44
+  cygwin-1.7.0-45
   libgcc1-4.3.2-2
-  libglib2.0_0-2.20.0-1
+  libglib2.0_0-2.20.1-1
   libintl8-0.17-10
 (for pygmenu and gmenu-simple-editor)
   python-2.5.4-10
@@ -26,9 +26,9 @@ Build requirements:
   gcc4-core-4.3.2-2
   gnome-common-2.26.0-1
   intltool-0.40.6-1
-  libtool-2.2.6a-2
+  libtool-2.2.7a-12
   make-3.81-2
-  pkg-config-0.23a-2
+  pkg-config-0.23b-10
   sed-4.1.5-2
 
 Canonical website:
@@ -40,18 +40,18 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gnome-menus-2.26.0-X-src.tar.bz2
+  unpack gnome-menus-2.26.1-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gnome-menus-2.26.0-X.cygport all
+  cygport ./gnome-menus-2.26.1-X.cygport all
 
 This will create:
-  /usr/src/gnome-menus-2.26.0-X-src.tar.bz2
-  /usr/src/gnome-menus-2.26.0-X.tar.bz2
-  /usr/src/libgnome-menu-devel-2.26.0-X.tar.bz2
-  /usr/src/libgnome-menu2-2.26.0-X.tar.bz2
-  /usr/src/python-gmenu-2.26.0-X.tar.bz2
+  /usr/src/gnome-menus-2.26.1-X-src.tar.bz2
+  /usr/src/gnome-menus-2.26.1-X.tar.bz2
+  /usr/src/libgnome-menu-devel-2.26.1-X.tar.bz2
+  /usr/src/libgnome-menu2-2.26.1-X.tar.bz2
+  /usr/src/python-gmenu-2.26.1-X.tar.bz2
 
 -------------------------------------------
 
@@ -219,6 +219,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 2.26.1-1 -----
+Version bump.
 
 ----- version 2.26.0-1 -----
 Initial release of GNOME 2.26 for Cygwin 1.7.
