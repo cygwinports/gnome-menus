@@ -1,5 +1,5 @@
 category: Gnome
-requires: cygwin libgnome-menu2 libglib2.0-devel
+requires: libgnome-menu2 libglib2.0-devel
 external-source: gnome-menus
 sdesc: "GNOME Desktop Menu implementation library (development)"
 ldesc: "The package contains an implementation of the draft 'Desktop
