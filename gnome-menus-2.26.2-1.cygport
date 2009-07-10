@@ -3,6 +3,8 @@ inherit python gnome2
 DESCRIPTION="GNOME Desktop Menu implementation"
 
 PATCH_URI="
+	http://patch-tracking.debian.net/patch/series/dl/${PN}/2.26.1-2/06_menus_rename.patch
+	http://patch-tracking.debian.net/patch/series/dl/${PN}/2.26.1-2/08_menus_prefix.patch
 	2.22-maxsymlinks.patch
 	2.22-python-no-undefined.patch
 "
@@ -13,3 +15,14 @@ gnome_menus_CONTENTS="etc/ usr/bin/gmenu-simple-editor
 libgnome_menu2_CONTENTS="usr/bin/*-2.dll"
 libgnome_menu_devel_CONTENTS='usr/include/ usr/lib/lib* usr/lib/pkgconfig/'
 python_gmenu_CONTENTS="${PYTHON_SITELIB#/}/gmenu.*"
+
+src_install() {
+	cd ${B}
+	cyginstall
+
+	# requires Debian patches 06 and 08
+	for menu in applications.menu settings.menu
+	do
+		mv ${D}/etc/xdg/menus/{,gnome-}${menu}
+	done
+}
