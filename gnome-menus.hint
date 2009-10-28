@@ -1,6 +1,5 @@
 category: Gnome
-requires: python python-gmenu python-gobject2 python-gtk2
-sdesc: "GNOME Desktop Menu implementation (apps and data)"
+sdesc: "GNOME Desktop Menu implementation (data)"
 ldesc: "The package contains an implementation of the draft 'Desktop
 Menu Specification' from freedesktop.org.
 
