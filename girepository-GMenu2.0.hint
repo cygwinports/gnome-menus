@@ -1,0 +1,9 @@
+category: Gnome
+requires: girepository-GLib2.0 libgnome-menu2
+external-source: gnome-menus
+sdesc: "GNOME Desktop Menu implementation library (GObject Introspection data)"
+ldesc: "The package contains an implementation of the draft 'Desktop
+Menu Specification' from freedesktop.org.
+
+Also contained here are the GNOME menu layout configuration
+files, .directory files and assorted menu related utility programs."
