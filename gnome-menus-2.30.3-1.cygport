@@ -3,8 +3,8 @@ inherit python gnome2
 DESCRIPTION="GNOME Desktop Menu implementation"
 
 PATCH_URI="
-	http://patch-tracker.debian.org/patch/series/dl/${PN}/2.30.0-1/06_menus_rename.patch
-	http://patch-tracker.debian.org/patch/series/dl/${PN}/2.30.0-1/08_menus_prefix.patch
+	http://patch-tracker.debian.org/patch/series/dl/${PN}/2.30.3-1/06_menus_rename.patch
+	http://patch-tracker.debian.org/patch/series/dl/${PN}/2.30.3-1/08_menus_prefix.patch
 	2.22-maxsymlinks.patch
 	2.28-python-no-undefined.patch
 "
