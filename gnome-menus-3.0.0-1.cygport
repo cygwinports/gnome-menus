@@ -24,8 +24,5 @@ src_install() {
 	cyginstall
 
 	# requires Debian patches 06 and 08
-	for menu in applications.menu settings.menu
-	do
-		mv ${D}/etc/xdg/menus/{,gnome-}${menu}
-	done
+	mv ${D}/etc/xdg/menus/{,gnome-}applications.menu
 }
