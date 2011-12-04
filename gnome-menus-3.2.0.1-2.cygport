@@ -3,11 +3,7 @@ inherit python gnome2
 DESCRIPTION="GNOME Desktop Menu implementation"
 
 PATCH_URI="
-	http://patch-tracker.debian.org/patch/series/dl/${PN}/3.2.0.1-1/01_default_prefix.patch
-	http://patch-tracker.debian.org/patch/series/dl/${PN}/3.2.0.1-1/08_settings-menus.patch
-	http://patch-tracker.debian.org/patch/series/dl/${PN}/3.2.0.1-1/10_use-default-python-path.patch
-	http://patch-tracker.debian.org/patch/series/dl/${PN}/3.2.0.1-1/11_science-menu.patch
-	http://patch-tracker.debian.org/patch/series/dl/${PN}/3.2.0.1-1/21_default-python-in-shebang.patch
+	http://patch-tracker.debian.org/patch/series/dl/${PN}/3.2.0.1-2/01_default_prefix.patch
 	2.22-maxsymlinks.patch
 "
 
