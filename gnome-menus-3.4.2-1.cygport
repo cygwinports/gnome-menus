@@ -23,3 +23,5 @@ src_install() {
 	# requires Debian patches
 	mv ${D}/etc/xdg/menus/{,gnome-}applications.menu
 }
+
+KEEP_LA_FILES="none"
