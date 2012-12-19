@@ -1,6 +1,14 @@
 inherit python gnome2
 
-DESCRIPTION="GNOME Desktop Menu implementation"
+NAME="gnome-menus"
+VERSION=3.6.1
+RELEASE=1
+CATEGORY="GNOME"
+SUMMARY="GNOME Desktop Menu implementation"
+DESCRIPTION="The package contains an implementation of the draft 'Desktop
+Menu Specification' from freedesktop.org. Also contained here are the GNOME
+menu layout configuration files, .directory files and assorted menu related
+utility programs."
 
 PATCH_URI="
 	http://patch-tracker.debian.org/patch/series/dl/${PN}/3.2.0.1-2/01_default_prefix.patch
@@ -10,8 +18,11 @@ PATCH_URI="
 PKG_NAMES="${PN} gmenu-simple-editor libgnome-menu3_0 libgnome-menu3-devel
            girepository-GMenu3.0"
 gnome_menus_CONTENTS="etc/ usr/share/desktop-directories/ usr/share/doc/"
+gmenu_simple_editor_SUMMARY="GNOME Desktop Menu editor"
+gmenu_simple_editor_REQUIRES="girepository-GMenu3.0 girepository-Gtk3.0"
 gmenu_simple_editor_CONTENTS="usr/bin/gmenu-simple-editor ${PYTHON_SITELIB#/}/GMenuSimpleEditor/
                               usr/share/applications/ usr/share/gnome-menus/"
+libgnome_menu3_0_REQUIRES=${NAME}
 libgnome_menu3_0_CONTENTS="usr/bin/cyggnome-menu-3-0.dll usr/share/locale/"
 libgnome_menu3_devel_CONTENTS='usr/include/ usr/lib/lib* usr/lib/pkgconfig/'
 girepository_GMenu3_0_CONTENTS="usr/*/gir*/GMenu-3.0.*"
@@ -23,5 +34,3 @@ src_install() {
 	# requires Debian patches
 	mv ${D}/etc/xdg/menus/{,gnome-}applications.menu
 }
-
-KEEP_LA_FILES="none"

@@ -1,9 +1,0 @@
-category: Gnome
-requires: python python-gi girepository-GdkPixbuf2.0 girepository-GMenu3.0 girepository-Gtk3.0
-external-source: gnome-menus
-sdesc: "GNOME Desktop Menu editor"
-ldesc: "The package contains an implementation of the draft 'Desktop
-Menu Specification' from freedesktop.org.
-
-Also contained here are the GNOME menu layout configuration
-files, .directory files and assorted menu related utility programs."
