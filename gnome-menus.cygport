@@ -1,7 +1,7 @@
 inherit python gnome2
 
 NAME="gnome-menus"
-VERSION=3.6.1
+VERSION=3.6.2
 RELEASE=1
 CATEGORY="GNOME"
 SUMMARY="GNOME Desktop Menu implementation"
@@ -11,7 +11,6 @@ menu layout configuration files, .directory files and assorted menu related
 utility programs."
 
 PATCH_URI="
-	http://patch-tracker.debian.org/patch/series/dl/${PN}/3.2.0.1-2/01_default_prefix.patch
 	2.22-maxsymlinks.patch
 "
 
@@ -31,6 +30,6 @@ src_install() {
 	cd ${B}
 	cyginstall
 
-	# requires Debian patches
+	# requires patch to gnome-session
 	mv ${D}/etc/xdg/menus/{,gnome-}applications.menu
 }
