@@ -1,9 +1,9 @@
 inherit python gnome2
 
 NAME="gnome-menus"
-VERSION=3.6.2
+VERSION=3.8.0
 RELEASE=1
-CATEGORY="GNOME"
+CATEGORY="Libs"
 SUMMARY="GNOME Desktop Menu implementation"
 DESCRIPTION="The package contains an implementation of the draft 'Desktop
 Menu Specification' from freedesktop.org. Also contained here are the GNOME
@@ -14,22 +14,10 @@ PATCH_URI="
 	2.22-maxsymlinks.patch
 "
 
-PKG_NAMES="${PN} gmenu-simple-editor libgnome-menu3_0 libgnome-menu3-devel
-           girepository-GMenu3.0"
+PKG_NAMES="${NAME} libgnome-menu3_0 libgnome-menu3-devel girepository-GMenu3.0"
+gnome_menus_CATEGORY="X11"
 gnome_menus_CONTENTS="etc/ usr/share/desktop-directories/ usr/share/doc/"
-gmenu_simple_editor_SUMMARY="GNOME Desktop Menu editor"
-gmenu_simple_editor_REQUIRES="girepository-GMenu3.0 girepository-Gtk3.0"
-gmenu_simple_editor_CONTENTS="usr/bin/gmenu-simple-editor ${PYTHON_SITELIB#/}/GMenuSimpleEditor/
-                              usr/share/applications/ usr/share/gnome-menus/"
 libgnome_menu3_0_REQUIRES=${NAME}
 libgnome_menu3_0_CONTENTS="usr/bin/cyggnome-menu-3-0.dll usr/share/locale/"
 libgnome_menu3_devel_CONTENTS='usr/include/ usr/lib/lib* usr/lib/pkgconfig/'
 girepository_GMenu3_0_CONTENTS="usr/*/gir*/GMenu-3.0.*"
-
-src_install() {
-	cd ${B}
-	cyginstall
-
-	# requires patch to gnome-session
-	mv ${D}/etc/xdg/menus/{,gnome-}applications.menu
-}
