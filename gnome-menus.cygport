@@ -2,7 +2,7 @@ inherit python gnome2
 
 NAME="gnome-menus"
 VERSION=3.13.3
-RELEASE=1
+RELEASE=2
 CATEGORY="Libs"
 SUMMARY="GNOME Desktop Menu implementation"
 DESCRIPTION="The package contains an implementation of the draft 'Desktop
@@ -11,6 +11,8 @@ menu layout configuration files, .directory files and assorted menu related
 utility programs."
 
 PATCH_URI="
+	https://git.gnome.org/browse/gnome-menus/patch/?id=b4546ab#/gnome-menus-gbo739245.patch
+	https://git.gnome.org/browse/gnome-menus/patch/?id=4befe76#/gnome-menus-gbo741505.patch
 	2.22-maxsymlinks.patch
 "
 
