@@ -2,7 +2,7 @@ inherit python gnome2
 
 NAME="gnome-menus"
 VERSION=3.13.3
-RELEASE=2
+RELEASE=3
 CATEGORY="Libs"
 SUMMARY="GNOME Desktop Menu implementation"
 DESCRIPTION="The package contains an implementation of the draft 'Desktop
@@ -10,6 +10,7 @@ Menu Specification' from freedesktop.org. Also contained here are the GNOME
 menu layout configuration files, .directory files and assorted menu related
 utility programs."
 
+SRC_URI+=" mimeapps.list"
 PATCH_URI="
 	https://git.gnome.org/browse/gnome-menus/patch/?id=b4546ab#/gnome-menus-gbo739245.patch
 	https://git.gnome.org/browse/gnome-menus/patch/?id=4befe76#/gnome-menus-gbo741505.patch
@@ -18,8 +19,15 @@ PATCH_URI="
 
 PKG_NAMES="${NAME} libgnome-menu3_0 libgnome-menu3-devel girepository-GMenu3.0"
 gnome_menus_CATEGORY="X11"
-gnome_menus_CONTENTS="etc/ usr/share/desktop-directories/ usr/share/doc/"
+gnome_menus_CONTENTS="etc/ usr/share/applications/ usr/share/desktop-directories/ usr/share/doc/"
 libgnome_menu3_0_REQUIRES=${NAME}
 libgnome_menu3_0_CONTENTS="usr/bin/cyggnome-menu-3-0.dll usr/share/locale/"
 libgnome_menu3_devel_CONTENTS='usr/include/ usr/lib/lib* usr/lib/pkgconfig/'
 girepository_GMenu3_0_CONTENTS="usr/*/gir*/GMenu-3.0.*"
+
+src_install() {
+	cd ${B}
+	cyginstall
+
+	newmenu ${S}/mimeapps.list gnome-mimeapps.list
+}
