@@ -18,7 +18,6 @@ PATCH_URI="
 
 PKG_NAMES="${NAME} libgnome-menu3_0 libgnome-menu3-devel girepository-GMenu3.0"
 gnome_menus_CATEGORY="X11"
-gnome_menus_REQUIRES="redhat-menus"
 gnome_menus_CONTENTS="etc/ usr/share/desktop-directories/ usr/share/doc/"
 libgnome_menu3_0_REQUIRES=${NAME}
 libgnome_menu3_0_CONTENTS="usr/bin/cyggnome-menu-3-0.dll usr/share/locale/"
